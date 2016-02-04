@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Recursions {
+	public static void main(String[] args) {
+			Scanner sc = new Scanner( System.in );
+		double d;	
+			System.out.print("ВВедите значение переменой a = ");
+			int a = sc.nextInt();
+			
+			System.out.print("ВВедите действие = ");
+			char f = sc.next().charAt(0);
+			
+			System.out.print("ВВедите значение переменой c = ");
+			int c = sc.nextInt();
+		if( f =='+' ){
+			d=a+c;
+			System.out.println(a + " + " + c +" = " + d);	}
+		if( f =='-' ){
+			d=a-c;
+			System.out.println(a + " - " + c +" = " + d);	}
+		if( f =='*' ){
+			d=a*c;
+			System.out.println(a + " * " + c +" = " + d);	}
+		if( f =='/' ){
+			d=(double)a/c;
+			System.out.println(a + " / " + c +" = " + d);	}
+		if( f =='^' ){
+			d= (int)Math.pow(a,c);
+		    System.out.println( a + " ^ " + c +" = " + d);}
+		if( f =='S' ){
+			d= (double)Math.sqrt(a);
+			System.out.println(" Корень квадратный из "+ a + " = " + d);
+			d= (double)Math.sqrt(c);
+			System.out.println(" Корень квадратный из "+ c + " = " + d);
+			}
+		}
+	}
